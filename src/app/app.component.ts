@@ -13,7 +13,7 @@ export class AppComponent {
   isValidUserSelection?: boolean;
   constructor(private api:ApiService) {}
 
-  onClick() {
+  randomSelection() {
     this.api.getComputerSelection().subscribe((data)=>{
            this.computerSelection = data;
     });
