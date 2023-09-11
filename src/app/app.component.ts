@@ -7,7 +7,7 @@ import {ApiService} from './api.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'game';
+  title = 'GAME';
   computerSelection = '';
   result = '';
   isValidUserSelection?: boolean;
@@ -32,7 +32,7 @@ export class AppComponent {
 
   playGame(useroption: string, computeroption : string) {
         this.api.playGame(useroption, computeroption).subscribe((data)=>{
-            this.result = data.result;
+            this.result = "YOU " + data.result;
          });
       }
 
